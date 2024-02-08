@@ -35,11 +35,11 @@ jobs:
     
     - name: Build, tag, and push docker image to Amazon ECR
       uses: docker/build-push-action@v5
-      env:
-        UPSTASH_REDIS_REST_TOKEN: ${{ secrets.UPSTASH_REDIS_REST_TOKEN }}
-        UPSTASH_REDIS_REST_URL: ${{ secrets.UPSTASH_REDIS_REST_URL }}
       with:
         context: src
+        build-args: |
+          UPSTASH_REDIS_REST_TOKEN=${{ secrets.UPSTASH_REDIS_REST_TOKEN }}
+          UPSTASH_REDIS_REST_URL=${{ secrets.UPSTASH_REDIS_REST_URL }}
         push: true
         tags: "615677714887.dkr.ecr.eu-central-1.amazonaws.com/personal-mehrshad-webpage-repo"
         cache-from: type=gha
