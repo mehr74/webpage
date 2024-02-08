@@ -2,19 +2,19 @@
 .env
 
 # dependencies
-/node_modules
-/.pnp
+/src/node_modules
+/src/.pnp
 .pnp.js
 
 # testing
-/coverage
+src/coverage
 
 # next.js
-/.next/
-/out/
+src/.next/
+src/out/
 
 # production
-/build
+src/build
 
 # misc
 .DS_Store
