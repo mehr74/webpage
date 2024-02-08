@@ -35,6 +35,9 @@ jobs:
     
     - name: Build, tag, and push docker image to Amazon ECR
       uses: docker/build-push-action@v5
+      env:
+        UPSTASH_REDIS_REST_TOKEN: ${{ secrets.UPSTASH_REDIS_REST_TOKEN }}
+        UPSTASH_REDIS_REST_URL: ${{ secrets.UPSTASH_REDIS_REST_URL }}
       with:
         context: src
         push: true
