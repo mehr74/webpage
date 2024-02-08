@@ -1,27 +1,27 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
 	{
-		icon: <Twitter size={20} />,
-		href: "https://twitter.com/chronark_",
-		label: "Twitter",
-		handle: "@chronark_",
-	},
-	{
-		icon: <Mail size={20} />,
-		href: "mailto:dev@chronark.com",
+		icon: <Mail size={30} />,
+		href: "mailto:mehrshad@mehrshad.io",
 		label: "Email",
-		handle: "dev@chronark.com",
+		handle: "mehrshad@mehrshad.io",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
+		icon: <Linkedin size={30} />,
+		href: "https://www.linkedin.com/in/mehrshad-lotfi/",
+		label: "LinkedIn",
+		handle: "Mehrshad Lotfi",
+	},
+	{
+		icon: <Github size={30} />,
+		href: "https://github.com/mehr74",
 		label: "Github",
-		handle: "chronark",
+		handle: "mehr74",
 	},
 ];
 
@@ -31,8 +31,8 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-					{socials.map((s) => (
-						<Card>
+					{socials.map((s, index) => (
+						<Card key={index}>
 							<Link
 								href={s.href}
 								target="_blank"
