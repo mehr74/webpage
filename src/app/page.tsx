@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import { Footer } from "./components/footer";
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
@@ -9,6 +10,7 @@ const navigation = [
 
 export default function Home() {
 	return (
+		<>
 		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
 			<nav className="my-16 animate-fade-in">
 				<ul className="flex items-center justify-center gap-4">
@@ -47,7 +49,7 @@ export default function Home() {
 				</h2>
 			</div>
 			<div
-				className="flex flex-col items-center max-w-xs mx-auto gap-4 sm:max-w-none sm:justify-center sm:flex-row sm:inline-flex aos-init aos-animate animate-fade-in"
+				className="mb-4 flex flex-col items-center max-w-xs mx-auto gap-4 sm:max-w-none sm:justify-center sm:flex-row sm:inline-flex aos-init aos-animate animate-fade-in"
 				data-aos="fade-down"
 				data-aos-delay="400"
 			>
@@ -83,5 +85,7 @@ export default function Home() {
 				</a>
 			</div>
 		</div>
+		<Footer classNames="footer-margin-top animate-fade-in bg-transparent" />
+		</>
 	);
 }
