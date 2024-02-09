@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 		default: "mehrshad.io",
 		template: "%s | mehrshad.io",
 	},
-	description: "Co-founder of unkey.dev and founder of planetfall.io",
+	description: "IT Solutions Consultant, Monitoring Expert, and Instructor",
 	openGraph: {
-		title: "chronark.com",
-		description: "Co-founder of unkey.dev and founder of planetfall.io",
-		url: "https://chronark.com",
+		title: "mehrshad.io",
+		description: "IT Solutions Consultant, Monitoring Expert, and Instructor",
+		url: "https://mehrshad.io",
 		siteName: "chronark.com",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "https://mehrshad.io/favicon.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "mehrshadlotfi",
 		card: "summary_large_image",
 	},
 	icons: {
