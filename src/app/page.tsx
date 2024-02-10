@@ -76,7 +76,7 @@ export default function Home() {
 					</svg>
 				</a>
 				<a
-					className="w-full transition duration-150 ease-in-out bg-opacity-25 text-zinc-200 hover:text-white bg-zinc-900 hover:bg-opacity-30"
+					className="w-full transition duration-150 ease-in-out bg-opacity-25 text-zinc-200 hover:text-white bg-zinc-900 hover:bg-opacity-30 text-center md:text-left"
 					target="_blank"
 					href="https://github.com/mehr74"
 					rel="noreferrer"
