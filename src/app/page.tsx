@@ -37,15 +37,7 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-lg text-zinc-500 ">
-					an IT solutions consultant, a monitoring enthusiast, and an instructor{" "}
-					<Link
-						target="_blank"
-						href="https://coachcrew.tech"
-						className="underline duration-500 hover:text-zinc-300"
-					>
-						@CoachCrewTech
-					</Link>
-					.
+					an IT solutions consultant, a monitoring enthusiast, and an instructor.
 				</h2>
 			</div>
 			<div
@@ -76,7 +68,7 @@ export default function Home() {
 					</svg>
 				</a>
 				<a
-					className="w-full transition duration-150 ease-in-out bg-opacity-25 text-zinc-200 hover:text-white bg-zinc-900 hover:bg-opacity-30"
+					className="w-full transition duration-150 ease-in-out bg-opacity-25 text-zinc-200 hover:text-white bg-zinc-900 hover:bg-opacity-30 text-center md:text-left"
 					target="_blank"
 					href="https://github.com/mehr74"
 					rel="noreferrer"

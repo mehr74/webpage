@@ -17,6 +17,17 @@ export function Footer({
           <p className="text-xs text-gray-400 leading-5 md:order-1 md:mt-0">
             &copy; {new Date().getUTCFullYear()} Mehrshad Lotfi Foroushani
           </p>
+          <p className="text-xs text-gray-400 leading-5 md:order-3 md:mt-0">
+            <a href="/imprint" className="pr-2 hover:underline">
+            Data privacy
+            </a>
+            <a href="/imprint" className="pr-2 hover:underline">
+            Terms and conditions
+            </a>
+            <a href="/imprint" className="hover:underline">
+            Imprint
+            </a>
+          </p>
         </div>
       </div>
     </footer>
